@@ -1,4 +1,4 @@
-#include "rss_reader.hpp"
+#include "rss_reader.h"
 
 RssReader::RssReader(size_t capa)
 {

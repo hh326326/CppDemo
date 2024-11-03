@@ -1,4 +1,4 @@
-#include "rss_reader.hpp"
+#include "rss_reader.h"
 
 int main(int argc, char **argv)
 {
