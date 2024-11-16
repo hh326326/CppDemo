@@ -21,6 +21,14 @@ void test() {
     con->stop();
 }
 
+void test2() {
+    MutexLock mutex1;
+    /* MutexLock mutex2 = mutex1; // error */
+
+    MutexLock mutex3;
+    /* mutex3 = mutex1; // error */
+}
+
 int main()
 {
     test();
