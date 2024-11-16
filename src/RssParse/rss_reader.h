@@ -26,3 +26,4 @@ public:
 private:
     vector<RssItem> _rss;
  };   
+
