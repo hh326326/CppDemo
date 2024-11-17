@@ -8,11 +8,10 @@ class TaskQueue;
 class Producer
 {
 public:
-    Producer(TaskQueue &taskQue); 
+    Producer(); 
     ~Producer(); 
-    void process();    
-private:
-    TaskQueue & _taskQue;
+
+    void produce(TaskQueue &taskQue);    
 };
 
 

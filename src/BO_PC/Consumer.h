@@ -8,12 +8,10 @@ class TaskQueue;
 class Consumer
 {
 public:
-    Consumer(TaskQueue &taskQue); 
+    Consumer(); 
     ~Consumer(); 
     
-    void process();
-private:
-    TaskQueue & _taskQue;
+    void consume(TaskQueue &taskQue);
 };
 
 

@@ -8,14 +8,13 @@
 #include <chrono>
 #include <iostream>
 
-Producer::Producer(TaskQueue &taskQue)
-: _taskQue(taskQue)
+Producer::Producer()
 {}
 
 Producer::~Producer() 
 {} 
 
-void Producer::process(){
+void Producer::produce(TaskQueue &taskQue){
     // C
     /* ::srand(::clock()); */ // 种随机数种子
     /* int num = ::rand() % 1000; */ // 产生随机数
@@ -33,7 +32,7 @@ void Producer::process(){
     int cnt = 20;
     while(cnt--) {
         int num = distrib(gen);
-        _taskQue.push(num);
+        taskQue.push(num);
         cout << ">>Producer produce number = " << num << endl;
         sleep(1);
     }
